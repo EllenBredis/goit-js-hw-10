@@ -29,7 +29,7 @@ function onSearch(evt) {
       } else if (countries.length > 1 && countries.length <= 10){
         countryList.insertAdjacentHTML('beforeend', markupCountryList(countries))
       }
-      else{
+      else if (countries.length!== ''){
         Notiflix.Notify.failure('Oops, there is no country with that name')
       }
     })
