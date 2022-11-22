@@ -1,6 +1,6 @@
 
-// const BASE_URL = 'https://restcountries.com/v3.1/name/'
-// const fields = 'fields=name,capital,population,flags,languages'
+// // const BASE_URL = 'https://restcountries.com/v3.1/name/'
+// // const fields = 'fields=name,capital,population,flags,languages'
 
 export function fetchCountries (name) {
   return fetch(
@@ -13,5 +13,6 @@ export function fetchCountries (name) {
     }
     return resp.json()
 })
-.catch(err => console.error(err));
+.catch(error => console.log(error));
 }
+
